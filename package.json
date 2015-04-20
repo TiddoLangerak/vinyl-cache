@@ -1,0 +1,20 @@
+{
+  "name": "vinyl-cache",
+  "version": "1.0.0",
+  "description": "Vinyl transformer to cache transformations in memory",
+  "main": "index.js",
+  "author": "Tiddo Langerak <tiddolangerak@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TiddoLangerak/vinyl-cache.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TiddoLangerak/vinyl-cache/issues"
+  },
+  "homepage": "https://github.com/TiddoLangerak/vinyl-cache",
+  "dependencies": {
+    "stream-combiner2": "^1.0.2",
+    "through2": "^0.6.5"
+  }
+}
