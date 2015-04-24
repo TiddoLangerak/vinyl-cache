@@ -13,7 +13,7 @@ module.exports = function (transform, key) {
 	var hashes = {};
 	return combine(
 		through.obj(function(chunk, enc, done) {
-			var hash = crypto.createHash('md5').update(chunk.contents).digest('hex');
+			var hash = crypto.createHash('md5').update(chunk.path).update(chunk.contents).digest('hex');
 			hashes[chunk.path] = hash;
 			if (cache[hash]) {
 				fromCache.push(cache[hash]);
