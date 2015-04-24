@@ -1,6 +1,6 @@
 {
   "name": "vinyl-cache",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Vinyl transformer to cache transformations in memory",
   "main": "index.js",
   "author": "Tiddo Langerak <tiddolangerak@gmail.com>",
