@@ -6,5 +6,7 @@
 
 ```
 vinyl.src(someFile)
-	.pipe(cache(someTransformation, cacheKey));
+	.pipe(cache(someTransformation, cacheObject));
 ```
+
+The `cacheObject` parameter is optional. If not given then a new cache will be created.

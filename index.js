@@ -1,12 +1,9 @@
 var through = require('through2');
 var combine = require('stream-combiner2');
 var crypto = require('crypto');
-var caches = {};
 
-module.exports = function (transform, key) {
-	key = key || "default";
-	caches[key] = caches[key] || {};
-	var cache = caches[key];
+module.exports = function (transform, cache) {
+	cache = cache || {};
 	var fromCache = [];
 
 	//We need to save the hashes per file because we can't calculate them in the second transformer
